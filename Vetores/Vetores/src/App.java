@@ -1,6 +1,15 @@
+import java.util.Scanner;
+
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
-        System.out.println("Desse jeito é bem melhor");
+        Scanner inUser = new Scanner(System.in);
+
+        System.out.println("Digite seu nome");
+        String nome = inUser.nextLine();
+
+
+        System.out.printf("O nome informado e :  %s",  nome  );
+
+        inUser.close();
     }
 }
